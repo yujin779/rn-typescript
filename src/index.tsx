@@ -2,6 +2,8 @@ import * as React from "react";
 import { View, Text, StyleSheet, AppRegistry } from "react-native";
 import App from "./App";
 
+const scale = .7;
+
 const styles = StyleSheet.create({
   window: {
     margin: 10,
@@ -9,8 +11,8 @@ const styles = StyleSheet.create({
     flexDirection: "column",
     borderWidth: 1,
     borderStyle: "dotted",
-    maxWidth: 375,
-    maxHeight: 667,
+    maxWidth: 375 * scale,
+    maxHeight: 667 * scale,
     backgroundColor: "#000"
   },
   statusBar: {
